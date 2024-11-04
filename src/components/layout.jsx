@@ -1,9 +1,16 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
+import Header from './header'
+import CartTab from './cartTab'
 
 function Layout() {
   return (
     <div>
-      <h1>Layout</h1>
+       <main>
+        <Header />
+        <Outlet />
+      </main>   
+      <CartTab />
     </div>
   )
 }

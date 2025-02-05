@@ -6,6 +6,7 @@ import { addToCart } from '../stores/cart';
 
 const Detail = () => {
     const { slug } = useParams();
+    
     const [detail, setDetail] = useState([]);
     const [quantity, setQuantity] = useState(1);
     const dispatch = useDispatch();
